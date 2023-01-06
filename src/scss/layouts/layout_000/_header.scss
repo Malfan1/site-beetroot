@@ -1,0 +1,47 @@
+.header {
+    padding: 15px;
+    .top-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include e(left){
+            & > *{
+                margin: 0;
+            }
+            @include e(large){
+                width: 23px;
+                height: 2px;
+                background: #000;
+                margin-bottom: 6px;
+            }
+
+            @include e(small){
+                width: 12px;
+                height: 2px;
+                background: #000;
+                margin-bottom: 6px;
+            }
+
+            @include e(medium){
+                width: 17px;
+                height: 2px;
+                background: #000;
+                margin-bottom: 6px;
+            }
+        } 
+
+        @include e(logo){
+            width: 180px;
+       }
+
+       @include e(right){
+            @include e(img){
+                width: 22px;
+                @include m(padding){
+                
+                }
+            }
+       }
+    }
+
+}

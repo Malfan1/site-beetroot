@@ -5,10 +5,7 @@ html {
 body {
   @include getCssVar(font-family);
   font-size: 1rem;
+  font-family: $baseFontFamily;
 }
 
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 0 12px;
-}
+
