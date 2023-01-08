@@ -1,5 +1,8 @@
 .header {
+    position: fixed;
+    width: 100%;
     padding: 15px;
+    background-color: $white;
     .top-menu {
         display: flex;
         justify-content: space-between;
@@ -8,6 +11,7 @@
             & > *{
                 margin: 0;
             }
+            cursor: pointer;
             @include e(large){
                 width: 23px;
                 height: 2px;
@@ -31,15 +35,27 @@
         } 
 
         @include e(logo){
-            width: 180px;
+            width: 125px;
        }
 
        @include e(right){
             @include e(img){
                 width: 22px;
                 @include m(padding){
-                
+                    margin-right: 16px;
                 }
+                @include m(position){
+                    position: relative;
+                }
+
+            }
+            @include m(zero){
+                position: absolute;
+                right: 12px;
+                top: 9px;
+                color: $red;
+                font-family: sans-serif;
+                font-size: 14px;
             }
        }
     }
