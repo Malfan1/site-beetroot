@@ -38,3 +38,28 @@
   $prefix: if(variable-exists(prefix), #{$prefix}, "");
   #{$cssProp}: var(--#{$prefix}#{$cssVar});
 }
+
+@mixin styleForFotoBlocks (){
+  & > *{
+            margin: 0;
+        }
+        background-size: cover;
+        margin-bottom: 10px;
+        @include e(h2){
+            font-size: 25px;
+            padding-top: 55px;
+            padding-left: 25px;
+            padding-bottom: 25px;
+        }
+
+        @include e(btn){
+            background-color: $white;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-left: 25px;
+            padding: 15px 40px;
+            font-size: 11px;
+            font-weight: $mediumFontWeight;
+            margin-bottom: 60px;
+        }
+}

@@ -1,0 +1,19 @@
+.foto{
+    display: grid;
+    grid-template-areas: 
+    "foto1"
+    "foto2"
+    ;
+    margin: 5px;
+    @include e(first){
+        grid-area: foto1;
+        background: url('#{$imagesPath}banner-v1-2.jpg') no-repeat;
+        @include styleForFotoBlocks()
+    }
+
+    @include e(second){
+        grid-area: foto2;
+        background: url('../../../i/banner-v1-1.jpg') no-repeat;
+        @include styleForFotoBlocks();
+    }
+}
