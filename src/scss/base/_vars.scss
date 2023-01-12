@@ -26,10 +26,13 @@ $imagesPath: "../../../i/";
 $black: #000000;
 $white: #ffffff;
 $red: #f0002f;
-
+$gray: #979797;
+$colorForTimeBlocks: #ffffffe6;
 
 $colors: (
   "black": $black,
   "white": $white,
   "red": $red,
+  "gray": $gray,
+  "colorForTimeBlocks": $colorForTimeBlocks,
 ) !default;
