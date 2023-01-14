@@ -63,3 +63,84 @@
             margin-bottom: 60px;
         }
 }
+
+@mixin styleForNewArrives($numBlock){
+  @include e($numBlock){
+    @include e(figure){
+        margin: 0;
+        position: relative;
+        @include m(img){
+            width: 100%;
+        }
+
+        @include m(sale){
+            position: absolute;
+            background: $red;
+            top: 5px;
+            right: 5px;
+            color: $white;
+            text-transform: uppercase;
+            padding: 5px 12px;
+            font-size: 10px;
+            letter-spacing: .2rem;
+        }
+
+        @include e(time){
+            width: 100%;
+            position: absolute;
+            bottom: 90px;
+            left: 50%;
+            transform: translate(-50%);
+            @include e(ul){
+            
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: flex;
+                justify-content: center;
+                font-size: 9px;
+
+                @include m(li){
+                    & > *{
+                        margin: 0;
+                        text-align: center;
+                        padding-bottom: 2px;
+                    }
+                    background: $colorForTimeBlocks;
+                    border-radius: 2px;
+                    width: 28px;
+                    margin: 0 3px 0;
+                }
+            }
+        }
+    }
+    @include e(link-box){
+        margin: 0;
+        padding: 20px 0 4px;
+
+        @include m(a){
+            text-decoration: none;
+            color: $black;
+            font-weight: $mediumFontWeight;
+            line-height: 28px;
+        }
+    }
+
+    @include e(p){
+        margin-top: 5px;
+        margin-bottom: 7px;
+        font-weight: $boldFontWeight;
+    }
+
+    @include e(price){
+        color: $red;
+        font-size: 13px;
+    }
+
+    @include e(price-old){
+        text-decoration:line-through;
+        font-weight: 15px;
+        color: $gray;
+    }
+}
+}

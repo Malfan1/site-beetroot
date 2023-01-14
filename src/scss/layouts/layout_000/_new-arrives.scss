@@ -11,64 +11,9 @@
     }
 
     @include e(product){
-        @include e(first){
-            @include e(figure){
-                margin: 0;
-                position: relative;
-                @include m(img){
-                    width: 100%;
-                }
+      @include styleForNewArrives(first);
 
-                @include m(sale){
-                    position: absolute;
-                    background: $red;
-                    top: 5px;
-                    right: 5px;
-                    color: $white;
-                    text-transform: uppercase;
-                    padding: 5px 12px;
-                    font-size: 10px;
-                    letter-spacing: .2rem;
-                }
-
-                @include e(time){
-                    display: flex;
-                    justify-content: space-between;
-                    background: $colorForTimeBlocks;
-                    position: absolute;
-                    bottom: 50%;
-                    left: 50%;
-                }
-            }
-            @include e(link-box){
-                margin: 0;
-                padding: 20px 0 4px;
-
-                @include m(a){
-                    text-decoration: none;
-                    color: $black;
-                    font-weight: $mediumFontWeight;
-                    line-height: 28px;
-                }
-            }
-
-            @include e(p){
-                margin-top: 5px;
-                margin-bottom: 7px;
-                font-weight: $boldFontWeight;
-            }
-
-            @include e(price){
-                color: $red;
-                font-size: 13px;
-            }
-
-            @include e(price-old){
-                text-decoration:line-through;
-                font-weight: 15px;
-                color: $gray;
-            }
-        }
+      @include styleForNewArrives(second);
     }
   }
 
