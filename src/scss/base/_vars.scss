@@ -12,6 +12,7 @@ $baseFontSize: 16px;
 $fontSofiaPro: 'SofiaPro';
 $baseFontFamily: "Playfair Display", sans-serif;
 $lightFontWeight: 300;
+$normalFontWeight: 400;
 $mediumFontWeight: 500;
 $semiBoldFontWeight: 600;
 $boldFontWeight: 700;
@@ -27,12 +28,12 @@ $black: #000000;
 $white: #ffffff;
 $red: #f0002f;
 $gray: #979797;
-$colorForTimeBlocks: #ffffffe6;
+$colorForBlocks: #ffffffe6;
 
 $colors: (
   "black": $black,
   "white": $white,
   "red": $red,
   "gray": $gray,
-  "colorForTimeBlocks": $colorForTimeBlocks,
+  "colorForBlocks": $colorForBlocks,
 ) !default;
