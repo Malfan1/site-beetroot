@@ -144,3 +144,15 @@
     }
 }
 }
+
+@mixin stylesForNewProduct($num){
+  @include e(figure){
+    padding-left: 5px;
+    @include e($num){
+      margin: 0;
+        @include m(img){
+            width: 100%;
+        }
+    }
+}
+}

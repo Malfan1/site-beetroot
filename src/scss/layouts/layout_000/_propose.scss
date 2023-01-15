@@ -1,0 +1,29 @@
+.propose{
+    padding-left: 5px;
+    padding-right: 5px;
+    display: grid;
+    grid-gap: 13px;
+    grid-template-columns: repeat(2, minmax(130px, auto));
+
+    @include e(h2){
+        grid-column: 1 / -1;
+        text-align: center;
+        font-weight: 400;
+    }
+    @include stylesForNewProduct(first);
+
+    @include stylesForNewProduct(second);
+
+    @include stylesForNewProduct(third);
+
+    @include stylesForNewProduct(fourth);
+
+    @include stylesForNewProduct(fifth);
+
+    @include stylesForNewProduct(sixth);
+
+    @include stylesForNewProduct(seventh);
+
+    @include stylesForNewProduct(eight);
+
+}

@@ -1,8 +1,7 @@
 .veggie-pizza {
     background: url('#{$imagesPath}banner-v5.jpg') center center no-repeat;
-    margin-top: 50px;
+    margin: 50px 0;
     height: 80vh;
-    margin-bottom: 1000px;
     position: relative;
     @include e(shop-block){
         & > * {
