@@ -1,0 +1,37 @@
+.footer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $fontSofiaPro;
+    @include e(logo){
+        width: 200px;
+
+        @include e(info){
+            margin-top: 23px;
+            font-size: 14px;
+            width: 270px;
+            text-align: center;
+            font-weight: $normalFontWeight;
+            
+            @include m(p){
+                margin: 0;
+            }
+        }
+    }
+
+
+    @include e(social){
+        margin-top: 20px;
+        width: 100px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    @include e(help){
+        @include e(h2){
+            font-size: 18px;
+            font-weight: $mediumFontWeight;
+        }
+    }
+}
