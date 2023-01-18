@@ -182,3 +182,41 @@
     }
   }
 }
+
+@mixin stylesForFooterHelp ($number){
+  @include e($number){
+    margin-bottom: 30px;
+    @include e(h2){
+        margin: 0;
+        font-size: 18px;
+        font-weight: $mediumFontWeight;
+    }
+
+    @include e(empty){
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        background: $black;
+        width: 30px;
+        height: 1px;
+        margin-top: 8px;
+    }
+
+    @include e(ul){
+        margin-top: 25px;
+        text-align: center;
+        padding: 0;
+        @include e(li){
+            list-style: none;
+            margin-bottom: 17px;
+            @include m(link){
+                font-size: 15px;
+                font-weight: $normalFontWeight;
+                padding: 5px 0;
+                text-decoration: none;
+                color: $black;
+            }
+        }
+    }
+}
+}

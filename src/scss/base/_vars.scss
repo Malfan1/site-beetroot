@@ -29,6 +29,8 @@ $white: #ffffff;
 $red: #f0002f;
 $gray: #979797;
 $colorForBlocks: #ffffffe6;
+$colorFooterTeam: rgb(108, 108, 108);
+$colorFooterLine: rgb(238, 238, 238);
 
 $colors: (
   "black": $black,
@@ -36,4 +38,6 @@ $colors: (
   "red": $red,
   "gray": $gray,
   "colorForBlocks": $colorForBlocks,
+  "colorFooterTeam": $colorFooterTeam,
+  "colorFooterLine": $colorFooterLine,
 ) !default;

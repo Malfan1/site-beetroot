@@ -23,15 +23,58 @@
 
     @include e(social){
         margin-top: 20px;
+        margin-bottom: 20px;
         width: 100px;
         display: flex;
         justify-content: space-between;
     }
 
     @include e(help){
-        @include e(h2){
-            font-size: 18px;
-            font-weight: $mediumFontWeight;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        @include stylesForFooterHelp(first);
+
+        @include stylesForFooterHelp(second);
+
+        @include stylesForFooterHelp(third);
+    }
+
+    @include e(line){
+        width: 100%;
+        height: 1px;
+        background:$colorFooterLine;
+        margin-bottom: 30px;
+    }
+
+    @include e(copyright){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 14px;
+        padding: 0 15px;
+        @include m(p){
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 30px;
+            &::before{
+                content: '\00A9';
+                padding-right: 5px;
+            }
+        }
+
+        @include m(team){
+            text-decoration: none;
+            color: $colorFooterTeam;
+        }
+
+        @include e(box){
+            width: 290px;
+            @include m(img){
+                width: 100%;
+            }
         }
     }
+
 }
