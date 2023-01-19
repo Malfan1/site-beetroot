@@ -1,0 +1,29 @@
+.footer {
+   @include e(top){
+      align-items:flex-start;
+      padding: 0 15px;
+   }
+
+   @include e(logo){
+      
+      @include e(info){
+         text-align: left;
+      }
+   }
+
+   @include e(social){
+      margin: 0;
+      width: 125px;
+   }
+
+   @include e(copyright){
+      @include e(box){
+         margin-left: auto;
+      }
+   }
+}
+
+.flex-992px{
+   display: flex;
+   width: 100%;
+}

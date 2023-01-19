@@ -185,6 +185,7 @@
 @mixin stylesForFooterHelp ($number){
   @include e($number){
     margin-bottom: 30px;
+    position: relative;
     @include e(h2){
         margin: 0;
         font-size: 18px;
@@ -248,4 +249,19 @@
       }
   }
   }
+}
+
+@mixin stylesForFooterHelp768px ($num){
+  @include e($num){
+
+    @include e(empty){
+        margin-top: 20px;
+        left: 10%;
+    }
+
+    @include e(ul){
+        padding-top: 20px;
+        text-align: start;
+    }
+}
 }

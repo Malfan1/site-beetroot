@@ -1,14 +1,18 @@
 .footer {
     margin-top: 50px;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; */
     font-family: $fontSofiaPro;
+    @include e(top){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     @include e(logo){
         width: 200px;
-
         @include e(info){
-            margin-top: 23px;
+            margin: 23px 0;
             font-size: 14px;
             width: 270px;
             text-align: center;
@@ -22,18 +26,21 @@
 
 
     @include e(social){
+        font-size: 14px;
         margin-top: 20px;
         margin-bottom: 20px;
         width: 100px;
         display: flex;
         justify-content: space-between;
+        margin-bottom: 23px;
+        
     }
 
     @include e(help){
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: relative;
+        margin-bottom: 35px;
         @include stylesForFooterHelp(first);
 
         @include stylesForFooterHelp(second);
@@ -53,7 +60,7 @@
         flex-direction: column;
         align-items: center;
         font-size: 14px;
-        padding: 0 15px;
+        padding: 26px 15px;
         @include m(p){
             text-align: center;
             margin-top: 0;
