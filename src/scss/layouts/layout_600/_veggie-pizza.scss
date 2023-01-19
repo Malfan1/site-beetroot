@@ -1,0 +1,17 @@
+.veggie-pizza {
+    @include e(shop-block){
+        padding: 40px 30px 66px;
+
+        @include e(h2){
+            padding-bottom: 40px;
+            
+        }
+        @include e(btn){
+            @include m(shop-now){
+                margin: 0;
+                padding: 13px 56px;
+            }
+        }
+
+    }
+}

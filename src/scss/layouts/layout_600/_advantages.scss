@@ -1,0 +1,17 @@
+.advantages{
+    grid-template-columns: repeat(2, 1fr);
+    
+    @include e(first){
+        grid-column: 1;
+        grid-row: 1;
+        display: block;
+       
+    }
+
+    @include e(second){
+        margin: 0;
+        grid-column: 2;
+        grid-row: 1;        
+    }
+}
+

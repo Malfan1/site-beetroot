@@ -1,6 +1,9 @@
 .deals {
-    background: url('#{$imagesPath}slideshow-v1.jpg') 50% 100% no-repeat;
-    background-size: cover;
+
+    @include e(position){
+        background: url('#{$imagesPath}slideshow-v1.jpg') center center no-repeat;
+        background-size: cover;
+    }
     color: $white;
     padding-top: 100px;
     padding-left: 5px;
@@ -10,18 +13,30 @@
         padding-bottom: 15px;
     }
     @include e(first-p){
-        
-        text-transform: uppercase;
-        font-weight: $mediumFontWeight;
-        letter-spacing: 4px;
+        @include m(text){
+            margin: 0;
+            padding-bottom: 15px;
+            text-transform: uppercase;
+            font-weight: $mediumFontWeight;
+            letter-spacing: 4px;
+        }
     }
 
-    @include e(h1){
-        
+    @include e(title){
+        margin: 0;
+        padding-bottom: 15px;
+        font-weight: $normalFontWeight;
+        font-size: 30px;
     }
 
     @include e(second-p){
-        line-height: 1.5;
+        @include m(text){
+            margin: 0;
+            padding-bottom: 15px;
+            line-height: 1.5;
+            font-size: 19px;
+            font-weight: $normalFontWeight;
+        }    
     }
 
     @include e(btn){

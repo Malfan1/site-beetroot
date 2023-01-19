@@ -1,0 +1,6 @@
+.instagram {
+    padding-left: 15px;
+    padding-right: 15px;
+    grid-gap: 10px;
+    grid-template-columns: repeat(3, minmax(130px, 1fr));
+}

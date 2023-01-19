@@ -12,3 +12,12 @@ $prefix: if(variable-exists(prefix), #{$prefix}, "");
 
 @import "../layouts/layout_000/index.scss";
 
+@media(min-width: 600px){
+  @import "../layouts/layout_600/index";
+}
+
+@media(min-width: 768px){
+  @import "../layouts/layout_768/index";
+}
+
+

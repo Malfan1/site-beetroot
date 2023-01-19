@@ -1,13 +1,16 @@
 .advantages{
+    padding-left: 15px;
+    padding-right: 15px;
     margin-top: 50px;
     margin-bottom: 60px;
     padding: 0 15px;
     display: grid;
+    grid-gap: 30px;// 768
    /*  grid-template-columns: repeat(3, 1fr); js */
     
     @include e(first){
-        /* grid-column: 1;
-        grid-row: 1; js*/
+       /*  grid-column: 1;
+        grid-row: 1; */
         display: none;
        
     }
