@@ -2,5 +2,11 @@
   @include stylesForNewArrives600px(first);
 
   @include stylesForNewArrives600px(second);
+
+  @include stylesForNewArrives600px(third);
 }
 
+
+.close {
+  display: block;
+}

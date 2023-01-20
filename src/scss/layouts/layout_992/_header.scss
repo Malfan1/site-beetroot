@@ -1,0 +1,42 @@
+.header-for-992px {
+    display: block;
+    @include e(container){
+        display: flex;
+        padding: 25px 15px;
+    }
+
+    @include e(nav){
+        @include e(ul){
+            list-style: none;
+            display: flex;
+            padding-left: 0;
+            @include e(li){
+                
+                @include e(a){
+                    font-size: 17px;
+                    font-weight: $mediumFontWeight;
+                    color: $colorNav992px;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    padding: 8px;
+                }
+            }
+        }
+    }
+
+    @include e(logo){
+        width: 175px;
+       
+    }
+
+    @include e(right){
+        margin-left: auto;
+        @include e(img){
+            width: 24px;
+        }
+    }
+}
+
+.header{
+    display: none;
+}

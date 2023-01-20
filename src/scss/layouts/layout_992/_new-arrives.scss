@@ -1,0 +1,11 @@
+.new-arrives{
+  grid-template-columns: repeat(4, minmax(130px, 1fr));// 5 after js
+
+  @include e(product){
+    @include styleForNewArrives(third);
+  }
+}
+
+.close {
+  display: block;
+}

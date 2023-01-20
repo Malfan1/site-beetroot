@@ -1,8 +1,9 @@
 .deals {
-
     @include e(position){
-        background: url('#{$imagesPath}slideshow-v1.jpg') center center no-repeat;
+        background: url('#{$imagesPath}slideshow-v1.jpg') center no-repeat;
         background-size: cover;
+        
+        
     }
     color: $white;
     padding-top: 100px;
