@@ -1,0 +1,6 @@
+.veggie-pizza {
+    transition: all 1s;
+    &:hover {
+        background-size: 110%;
+    }
+}

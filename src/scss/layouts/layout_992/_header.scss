@@ -5,13 +5,13 @@
         padding: 25px 15px;
     }
 
+
     @include e(nav){
         @include e(ul){
-            list-style: none;
             display: flex;
+            list-style: none;
             padding-left: 0;
             @include e(li){
-                
                 @include e(a){
                     font-size: 17px;
                     font-weight: $mediumFontWeight;
@@ -30,9 +30,12 @@
     }
 
     @include e(right){
-        margin-left: auto;
+       margin-left: auto;
         @include e(img){
-            width: 24px;
+            background: #fff;
+            fill: #fff;
+            height: 24px;
+            
         }
     }
 }

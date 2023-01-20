@@ -4,9 +4,8 @@
   @include stylesForNewArrives600px(second);
 
   @include stylesForNewArrives600px(third);
+
+  @include stylesForNewArrives600px(fourth);
 }
 
 
-.close {
-  display: block;
-}

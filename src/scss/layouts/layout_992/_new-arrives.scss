@@ -1,8 +1,18 @@
 .new-arrives{
   grid-template-columns: repeat(4, minmax(130px, 1fr));// 5 after js
-
+  margin-top: 15px;
+  margin-bottom: 70px;
   @include e(product){
-    @include styleForNewArrives(third);
+
+    @include scaleForNewArrives(first);
+    @include scaleForNewArrives(second);
+    @include scaleForNewArrives(third);
+    @include scaleForNewArrives(fourth);
+  }
+
+  @include e(h2){
+    font-size: 36px;
+    font-weight: $mediumFontWeight;
   }
 }
 
