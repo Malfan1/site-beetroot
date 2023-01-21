@@ -162,6 +162,7 @@
       align-items: center;
       @include e(name-box){
         @include m(a){
+          font-size: 14px;
           text-decoration: none;
           color: $black;
         }
@@ -277,4 +278,27 @@
       }
     }
   }
+}
+
+@mixin styleForFotoBlocks992px (){
+  @include e(h2){
+    font-size: 35px;
+  }
+
+  @include e(btn){
+    font-size: 14px;
+    
+  }
+}
+
+@mixin fontSizeForPriceNewArrives($num){
+    @include e($num){
+        @include e(price){
+          font-size: 14px;
+        }
+
+        @include e(price-old){
+          font-size: 16px;
+        }
+    }
 }

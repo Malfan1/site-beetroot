@@ -8,6 +8,11 @@
     @include scaleForNewArrives(second);
     @include scaleForNewArrives(third);
     @include scaleForNewArrives(fourth);
+
+    @include fontSizeForPriceNewArrives(first);
+    @include fontSizeForPriceNewArrives(second);
+    @include fontSizeForPriceNewArrives(third);
+    @include fontSizeForPriceNewArrives(fourth);
   }
 
   @include e(h2){

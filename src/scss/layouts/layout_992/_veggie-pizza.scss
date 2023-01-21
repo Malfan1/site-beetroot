@@ -1,6 +1,20 @@
 .veggie-pizza {
-    transition: all 1s;
     &:hover {
         background-size: 110%;
+    }
+
+    @include e(shop-block){
+        @include e(h2){
+            font-size: 60px;
+            font-weight: $mediumFontWeight;
+        }
+
+        @include e(p){
+            font-size: 24px;
+        }
+
+        @include e(btn){
+            top: 92%;
+        }
     }
 }

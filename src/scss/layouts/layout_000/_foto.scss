@@ -3,10 +3,11 @@
     padding-right: 15px;
     display: grid;
     margin: 5px;
+    position: relative;
     @include e(first){
         background: url('#{$imagesPath}banner-v1-2.jpg') center center no-repeat;
         background-size: cover;
-        @include styleForFotoBlocks()
+        @include styleForFotoBlocks();
     }
 
     @include e(second){

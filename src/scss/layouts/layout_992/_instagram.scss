@@ -1,3 +1,7 @@
 .instagram {
     grid-template-columns: repeat(5, minmax(130px, 1fr));
+
+    @include e(h2){
+        font-size: 36px;
+    }
 }

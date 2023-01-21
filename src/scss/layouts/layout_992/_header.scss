@@ -5,7 +5,6 @@
         padding: 25px 15px;
     }
 
-
     @include e(nav){
         @include e(ul){
             display: flex;
@@ -25,14 +24,14 @@
     }
 
     @include e(logo){
+        margin: auto;
         width: 175px;
        
     }
 
     @include e(right){
-       margin-left: auto;
         @include e(img){
-            background: #fff;
+            
             fill: #fff;
             height: 24px;
             

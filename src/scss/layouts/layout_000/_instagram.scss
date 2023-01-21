@@ -7,10 +7,10 @@
     grid-template-columns: repeat(2, minmax(130px, 1fr));
     @include e(h2){
         margin: 0;
-        padding-bottom: 15px;
         grid-column: 1 / -1;
         text-align: center;
         font-weight: 400;
+        padding-bottom: 50px
     }
 
     @include e(box-img){

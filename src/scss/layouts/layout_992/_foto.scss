@@ -1,0 +1,9 @@
+.foto{
+    @include e(first){
+        @include styleForFotoBlocks992px();
+    }
+
+    @include e(second){
+        @include styleForFotoBlocks992px();
+    }
+}
