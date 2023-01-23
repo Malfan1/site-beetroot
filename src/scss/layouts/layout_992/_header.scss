@@ -1,41 +1,72 @@
-.header-for-992px {
+.header-for-992px{
     display: block;
-    @include e(container){
-        display: flex;
-        padding: 25px 15px;
-    }
 
+    @include e(container){
+        padding: 15px 0;
+        display: flex;
+        
+    }
     @include e(nav){
-        @include e(ul){
-            display: flex;
+        width: 40%;
+       @include e(ul){
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        padding: 0 15px;
+        @include e(li){
             list-style: none;
-            padding-left: 0;
-            @include e(li){
-                @include e(a){
-                    font-size: 17px;
-                    font-weight: $mediumFontWeight;
-                    color: $colorNav992px;
-                    text-decoration: none;
-                    text-transform: uppercase;
-                    padding: 8px;
+            @include m(a){
+                position: relative;
+                font-size: 17px;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: $colorNav992px;
+                padding: 8px;
+                font-weight: $mediumFontWeight;
+                &:hover {
+                    color:$red;
                 }
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    border-bottom: 1px solid $red;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    transform: scaleX(0);
+                    transform-origin: right;
+                    transition: transform .6s;
+                }
+
+                &:hover::after {
+                    transform: scaleX(1);
+                    transform-origin: left;
+                }
+                
             }
         }
+       }
+        
     }
 
     @include e(logo){
-        margin: auto;
         width: 175px;
-       
+        @include m(img){
+            width: 100%;
+        }
     }
 
     @include e(right){
-        @include e(img){
-            
-            fill: #fff;
+        display: flex;
+        align-items: center;
+        margin-left: auto;
+         @include m(img){
+            width: 24px;
             height: 24px;
-            
-        }
+            margin-right: 18px;
+         }
     }
 }
 

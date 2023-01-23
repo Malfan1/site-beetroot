@@ -188,6 +188,7 @@
     margin-bottom: 30px;
     position: relative;
     @include e(h2){
+        text-align: center;
         margin: 0;
         font-size: 18px;
         font-weight: $mediumFontWeight;
@@ -253,17 +254,24 @@
 }
 
 @mixin stylesForFooterHelp768px ($num){
-  @include e($num){
+  @include e(help){
+    @include e($num){
 
-    @include e(empty){
-        margin-top: 20px;
-        left: 10%;
-    }
+      @include e(h2){
+        text-align: left;
+      }
 
-    @include e(ul){
-        padding-top: 20px;
-        text-align: start;
-    }
+      @include e(empty){
+          margin-top: 20px;
+          left: 0;
+      }
+  
+      @include e(ul){
+          padding-top: 20px;
+          text-align:start;
+      }
+  }  
+
 }
 }
 
@@ -301,4 +309,20 @@
           font-size: 16px;
         }
     }
+}
+
+@mixin hoverForFooter($num){
+  @include e(help){
+    @include e($num){
+       @include e(ul){
+          @include e(li){
+             @include m(link){
+                &:hover{
+                   color: $red;
+                }
+             }
+          }
+       }
+    }
+ }
 }

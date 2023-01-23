@@ -21,6 +21,18 @@
          margin-left: auto;
       }
    }
+
+   @include e(help){
+      width: 70%;
+   }
+
+   @include hoverForFooter(first);
+   @include hoverForFooter(second);
+   @include hoverForFooter(third);
+}
+
+.fa-brands:hover{
+      color: $red;
 }
 
 .flex-992px{
