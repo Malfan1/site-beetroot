@@ -70,6 +70,7 @@
         position: relative;
         @include m(img){
             width: 100%;
+            max-width: 100%;
         }
 
         @include m(sale){
