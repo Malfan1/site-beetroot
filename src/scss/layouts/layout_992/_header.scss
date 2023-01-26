@@ -1,6 +1,7 @@
 .header-for-992px{
     display: block;
-
+    transition: .3s all ease;
+    
     @include e(container){
         padding: 15px 0;
         display: flex;
@@ -70,6 +71,24 @@
     }
 }
 
+.header-fixed{
+    width: 100%;
+    position: fixed;
+    top: -100%;
+    z-index: 1;
+    background: $colorHeaderIsShow;
+   
+}
+
+.header-is-show{
+    top: 0;
+
+}
+
 .header{
+    display: none;
+}
+
+.header-none{
     display: none;
 }
