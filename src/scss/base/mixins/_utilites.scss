@@ -257,23 +257,19 @@
 @mixin stylesForFooterHelp768px ($num){
   @include e(help){
     @include e($num){
-
       @include e(h2){
         text-align: left;
       }
-
       @include e(empty){
-          margin-top: 20px;
-          left: 0;
+        left: 10%;
       }
-  
       @include e(ul){
-          padding-top: 20px;
-          text-align:start;
+        @include e(li){
+          text-align: left;
+        }
       }
-  }  
-
-}
+    }
+  }
 }
 
 @mixin scaleForNewArrives ($num){

@@ -6,13 +6,13 @@
     flex-direction: row;
     justify-content: space-between;
     text-align:start;
+   }
 
-    @include stylesForFooterHelp768px(first);
+   @include stylesForFooterHelp768px(first);
     
     @include stylesForFooterHelp768px(second);
     
     @include stylesForFooterHelp768px(third);
-   }
 
    @include e(copyright){
       flex-direction: row;
