@@ -9,15 +9,17 @@
     }
     @include e(nav){
         width: 40%;
+        position: relative;
        @include e(ul){
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 0;
         padding: 0 15px;
+        cursor: pointer;
         @include e(li){
             list-style: none;
-            @include m(a){
+            @include m(span){
                 position: relative;
                 font-size: 17px;
                 text-transform: uppercase;
@@ -46,6 +48,26 @@
                     transform-origin: left;
                 }
                 
+            }
+        }
+       }
+
+       @include e(ul-menu){
+            position: absolute;
+            top: 50px;
+            left: -25px;
+        @include e(li){
+            
+            list-style: none;
+            background: $white;
+            padding: 10px;
+            
+           
+
+            @include m(a){
+                text-decoration: none;
+                color: $black;
+                text-transform: uppercase;
             }
         }
        }

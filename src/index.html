@@ -36,21 +36,38 @@
           <header id="header-scroll" class="header-for-992px">
             <div class="header-for-992px__container">
               <nav class="header-for-992px__nav">
-                <ul class="header-for-992px__nav__ul">
+                <ul id="nav-main-ul" class="header-for-992px__nav__ul">
                   <li class="header-for-992px__nav__ul__li">
-                    <a href="#" class="header-for-992px__nav__ul__li_a">home</a>
+                    <span class="header-for-992px__nav__ul__li_span">home</span>
+                      <ul class="header-for-992px__nav__ul-menu">
+                        <li class="header-for-992px__nav__ul-menu__li">
+                          <a href="#" class="header-for-992px__nav__ul-menu__li_a">home 1</a>
+                        </li>
+                        <li class="header-for-992px__nav__ul-menu__li">
+                          <a href="#" class="header-for-992px__nav__ul-menu__li_a">home 2</a>
+                        </li>
+                        <li class="header-for-992px__nav__ul-menu__li">
+                          <a href="#" class="header-for-992px__nav__ul-menu__li_a">home 3</a>
+                        </li>
+                        <li class="header-for-992px__nav__ul-menu__li">
+                          <a href="#" class="header-for-992px__nav__ul-menu__li_a">home 4</a>
+                        </li>
+                        <li class="header-for-992px__nav__ul-menu__li">
+                          <a href="#" class="header-for-992px__nav__ul-menu__li_a">home 5</a>
+                        </li>
+                      </ul>
                   </li>
                   <li class="header-for-992px__nav__ul__li">
-                    <a href="#" class="header-for-992px__nav__ul__li_a">shop</a>
+                    <span class="header-for-992px__nav__ul__li_span">shop</span>
                   </li>
                   <li class="header-for-992px__nav__ul__li">
-                    <a href="#" class="header-for-992px__nav__ul__li_a">featured</a>
+                    <span class="header-for-992px__nav__ul__li_span">featured</span>
                   </li>
                   <li class="header-for-992px__nav__ul__li">
-                    <a href="#" class="header-for-992px__nav__ul__li_a">pages</a>
+                    <span class="header-for-992px__nav__ul__li_span">pages</span>
                   </li>
                   <li class="header-for-992px__nav__ul__li">
-                    <a href="#" class="header-for-992px__nav__ul__li_a">blogs</a>
+                    <span class="header-for-992px__nav__ul__li_span">blogs</span>
                   </li>
                 </ul>
               </nav>
@@ -661,5 +678,11 @@
     <script src="js/app.js"></script>
     <script src="js/header-992px.js"></script>
     <script src="js/header-320px.js"></script>
+    <script src="js/nav.js"></script>
+    <script>
+      document.querySelector(".header-for-992px__nav__ul").onclick = function(event){
+        console.log(event);
+      }
+    </script>
   </body>
 </html>
