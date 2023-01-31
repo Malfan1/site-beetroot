@@ -2,16 +2,21 @@
     padding-left: 15px;
     padding-right: 15px;
     display: grid;
-    margin: 5px;
-    position: relative;
+    grid-gap: 10px;
+    grid-template-columns: 1fr;
     @include e(first){
-        background: url('#{$imagesPath}banner-v1-2.jpg') center center no-repeat;
+        grid-column: 1;
+        grid-row: 1;
+        //background: url('#{$imagesPath}banner-v1-2.jpg')center center no-repeat;
+
         background-size: cover;
         @include styleForFotoBlocks();
     }
 
     @include e(second){
-        background: url('../../../i/banner-v1-1.jpg') center center no-repeat;
+        grid-column: 1;
+        grid-row: 2;
+       // background: url('../../../i/banner-v1-1.jpg') center center no-repeat;
         background-size: cover;
         @include styleForFotoBlocks();
     }

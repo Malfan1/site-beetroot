@@ -1,9 +1,93 @@
 .foto{
+    
     @include e(first){
+        overflow: hidden;
+        position: relative;
+        cursor: pointer;
+        @include m(img){
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,.6);
+                opacity: 0;
+                transition: all .3s linear;
+                
+            }
+    
+            &:hover::before{
+                opacity: 1;
+            }
+
+            &:hover{
+                transform: scale(1.1);
+                transition: all 1s;
+            }
+
+        }
+
+        @include e(block){
+            @include m(btn){
+                &:hover{
+                    background: $red;
+                    color: $white;
+                    transition: all .2s linear;
+                    cursor: pointer;
+                }
+            }
+        }
         @include styleForFotoBlocks992px();
     }
 
     @include e(second){
+        position: relative;
+        cursor: pointer;
+        overflow: hidden;
+        @include m(img){
+           overflow: hidden;
+            width: 100%;
+            height: 100%;
+            &::before{
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,.6);
+                opacity: 0;
+                transition: all .3s linear;
+                
+            }
+    
+            &:hover::before{
+                opacity: 1;
+            }
+
+            &:hover{
+                transform: scale(1.1);
+                transition: all 1s;
+            }
+        }
+
+        @include e(block){
+            @include m(btn){
+                &:hover{
+                    background: $red;
+                    color: $white;
+                    transition: all .2s linear;
+                    cursor: pointer;
+                }
+            }
+        }
         @include styleForFotoBlocks992px();
     }
+
+
 }

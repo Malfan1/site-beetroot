@@ -44,22 +44,33 @@
             margin: 0;
         }
         margin-bottom: 10px;
-        @include e(h2){
-            font-size: 25px;
-            padding-top: 55px;
-            padding-left: 10px;
-            padding-bottom: 25px;
+        @include m(img){
+          position: relative;
+          
+          & > * {
+            
+            width: 100%;
+            height: 100%;
+          }
         }
-
-        @include e(btn){
+        @include e(block){
+          position: absolute;
+          top: 35%;
+          left: 15px;
+          @include m(h2){
+            font-size: 25px;
+            margin: 0;
+            margin-bottom: 25px;
+        }
+  
+        @include m(btn){
             background-color: $white;
             letter-spacing: 2px;
             text-transform: uppercase;
-            margin-left: 10px;
             padding: 15px 40px;
             font-size: 11px;
             font-weight: $mediumFontWeight;
-            margin-bottom: 60px;
+        }
         }
 }
 
@@ -286,13 +297,15 @@
 }
 
 @mixin styleForFotoBlocks992px (){
-  @include e(h2){
-    font-size: 35px;
-  }
-
-  @include e(btn){
-    font-size: 14px;
-    
+  @include e(block){
+    @include m(h2){
+      font-size: 35px;
+    }
+  
+    @include m(btn){
+      font-size: 14px;
+      
+    }
   }
 }
 

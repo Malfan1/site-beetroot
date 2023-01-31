@@ -5,10 +5,20 @@
     @include e(first){
         grid-column: 1;
         grid-row: 1;
+        @include e(block){
+            @include m(h2){
+                font-size: 30px;
+            }
+        }
     }
 
     @include e(second){
         grid-column: 2;
         grid-row: 1;
+        @include e(block){
+            @include m(h2){
+                font-size: 30px;
+            }
+        }
     }
 }
