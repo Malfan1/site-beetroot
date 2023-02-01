@@ -1,7 +1,7 @@
 .advantages{
-    grid-template-columns: repeat(3, 1fr);
+    //grid-template-columns: repeat(3, 1fr);
     
-    @include e(first){
+  /*   @include e(first){
         grid-column: 1;
         grid-row: 1;
         display: block;
@@ -19,6 +19,6 @@
         grid-row: 1;
         display: block;
        
-    }
+    } */
 }
 

@@ -1,4 +1,9 @@
 .veggie-pizza {
+    & {
+        background-size: 100%;
+        -webkit-transition: background-size .4s linear;
+        transition: background-size .4s linear;
+    }
     &:hover {
         background-size: 110%;
     }

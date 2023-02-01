@@ -1,3 +1,6 @@
+.propose__figure__first__elements{
+    display: block;
+}
 .propose{
     grid-template-columns: repeat(4, minmax(130px, 1fr));
     @include e(h2){
@@ -16,4 +19,6 @@
     transform: translateY(0);
     cursor: pointer;
 }
+
+
 

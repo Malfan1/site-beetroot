@@ -1,32 +1,11 @@
+figure {
+    margin: 0;
+}
+
 .advantages{
-    padding-left: 15px;
-    padding-right: 15px;
     margin-top: 50px;
     margin-bottom: 60px;
     padding: 0 15px;
-    display: grid;
-    grid-gap: 30px;// 768
-   /*  grid-template-columns: repeat(3, 1fr); js */
-    
-    @include e(first){
-       /*  grid-column: 1;
-        grid-row: 1; */
-        display: none;
-       
-    }
-
-    @include e(second){
-      
-        grid-column: 1; // 2 after js
-        grid-row: 1;        
-    }
-
-    @include e(third){
-        /* grid-column: 3;
-        grid-row: 1; js */
-        display: none;
-    }
-
     @include e(info__h2){
         margin: 0;
         font-size: 17px;
@@ -34,9 +13,11 @@
         font-weight: $mediumFontWeight;
         padding-top: 30px;
         padding-bottom: 9px;
+        text-align: center;
     }
 
     @include e(info__p){
+        width: 100%;
         margin: 0;
         text-align: center;
         font-size: 14px;
@@ -45,6 +26,8 @@
 }
 
 .advantages__img{
-    text-align: center;
+    &>*{
+        display: block;
+        margin: auto;
+    }
 }
-
