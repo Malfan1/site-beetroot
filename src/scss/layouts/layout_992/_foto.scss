@@ -20,16 +20,11 @@
                 transition: all .3s linear;
                 
             }
+
     
             &:hover::before{
                 opacity: 1;
             }
-
-            &:hover{
-                transform: scale(1.1);
-                transition: all 1s;
-            }
-
         }
 
         @include e(block){
@@ -50,7 +45,7 @@
         cursor: pointer;
         overflow: hidden;
         @include m(img){
-           overflow: hidden;
+           
             width: 100%;
             height: 100%;
             &::before{
@@ -65,17 +60,11 @@
                 transition: all .3s linear;
                 
             }
-    
             &:hover::before{
                 opacity: 1;
             }
 
-            &:hover{
-                transform: scale(1.1);
-                transition: all 1s;
-            }
         }
-
         @include e(block){
             @include m(btn){
                 &:hover{

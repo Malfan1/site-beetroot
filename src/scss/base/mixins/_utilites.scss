@@ -336,3 +336,62 @@
     }
  }
 }
+
+@mixin stylesForPropose($num) {
+  @include e($num){
+    @include e(before){
+        position: relative;
+        display: flex;
+        &::before{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height:100%;
+            background: rgba(0,0,0,.6);
+            opacity: 0;
+            content: "";
+            transition: all .3s linear;
+        }
+
+        &:hover::before{
+            opacity: 1;
+            
+        }
+    }
+
+    @include e(elements){
+        display: flex;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        overflow: hidden;
+        @include m(i){
+            width: 46px;
+            height: 46px;
+            margin-right: 10px;
+            background: $white;
+            border-radius: 100%;
+            &:last-of-type{
+                margin-right: 0;
+            }
+            & > *  {
+                transform: translate(60%,60%);
+                width: 20px;
+                height: 20px;
+            }
+
+            &:hover{
+                background: $red;
+                fill: $white;
+            }
+        }
+
+        & > div{
+            transform: translateY(50px);
+            transition: transform .3s ease;
+        }
+    }
+}
+}
