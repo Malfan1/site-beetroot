@@ -76,6 +76,10 @@
 
 @mixin styleForNewArrives($numBlock){
   @include e($numBlock){
+    /* margin-right: 10px;
+    &:last-of-type {
+      margin-right: 0;
+    } */
     @include e(figure){
         margin: 0;
         position: relative;
