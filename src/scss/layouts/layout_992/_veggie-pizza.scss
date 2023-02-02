@@ -20,6 +20,10 @@
 
         @include e(btn){
             top: 92%;
+
+            &:hover {
+                background: $red;
+            }
         }
     }
 }

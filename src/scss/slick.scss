@@ -98,3 +98,41 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+.slick{
+    position: relative;
+    &-arrow{
+        position: absolute;
+        top: 60%;
+        font-size: 0;
+        width: 30px;
+        height: 30px;
+    }
+
+    &-prev{
+        z-index: 1;
+        background: white url("../svg/sl-arrow_l.svg")50% 50%/50% 50% no-repeat;
+        
+    }
+
+    &-next{
+        right: 0;
+        z-index: 1;
+        background: white url("../svg/sl-arrow_r.svg") 50% 50%/50% 50% no-repeat;
+    }
+
+}
+
+@media(min-width: 992px){
+    .slick-prev{
+        &:hover{
+            background: #f0002f url("../svg/sl-arrow_l_white.svg") 50% 50%/50% 50% no-repeat;
+        }
+    }
+
+    .slick-next {
+        &:hover{
+            background: #f0002f url("../svg/sl-arrow_r_white.svg") 50% 50%/50% 50% no-repeat;
+        }
+    }
+}

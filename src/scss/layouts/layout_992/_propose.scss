@@ -13,6 +13,22 @@
     @include e(figure){
         @include stylesForPropose(first);
     }
+    @include e(figcaption){
+        @include fz992pxPropose(first);
+        @include fz992pxPropose(second);
+        @include fz992pxPropose(third);
+        @include fz992pxPropose(fourth);
+        @include fz992pxPropose(fifth);
+        @include fz992pxPropose(sixth);
+        @include fz992pxPropose(seventh);
+        @include fz992pxPropose(eight);
+
+
+
+
+
+
+    }
 }
 
 .propose__figure__first__before:hover .propose__figure__first__elements > div{
