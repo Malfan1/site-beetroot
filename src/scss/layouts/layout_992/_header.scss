@@ -87,6 +87,7 @@
         align-items: center;
         margin-left: auto;
          @include m(img){
+            cursor: pointer;
             width: 24px;
             height: 24px;
             margin-right: 18px;

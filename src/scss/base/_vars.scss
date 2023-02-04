@@ -33,6 +33,9 @@ $colorFooterTeam: rgb(108, 108, 108);
 $colorFooterLine: rgb(238, 238, 238);
 $colorNav992px: #f8f8f8;
 $colorHeaderIsShow: rgba(26, 26, 26, 0.9);
+$colorForgotPass: #c5c4c4;
+$colorBorderRegisterBlock: #e8eced;
+$colorRegisterBlock : #f2f2f2;
 
 $colors: (
   "black": $black,
@@ -44,4 +47,7 @@ $colors: (
   "colorFooterLine": $colorFooterLine,
   "colorNav992px": $colorNav992px,
   "colorHeaderIsShow": $colorHeaderIsShow,
+  "colorForgotPass": $colorForgotPass,
+  "colorRegisterBlock": $colorRegisterBlock,
+  "colorBorderRegisterBlock": $colorBorderRegisterBlock,
 ) !default;

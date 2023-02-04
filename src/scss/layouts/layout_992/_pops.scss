@@ -1,0 +1,118 @@
+.pop-up-login {
+    display: none;
+
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,.6);
+    z-index: 5;
+
+    @include e(container){
+        width: 100%;
+        height: 100%;
+
+        @include e(main){
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            width: 500px;
+            padding: 50px;
+            background: $white;
+            position: relative;
+
+            @include e(image){
+                position: relative;
+                width: 180px;
+                padding-bottom: 20px;
+
+                @include m(line){
+                    position: absolute;
+                    width: 365px;
+                    height: 1px;
+                    background: rgba(128, 128, 128, 0.774);
+                    bottom: 0;
+                    left: -95px;
+                }
+            }
+
+            @include e(h2){
+                margin: 0;
+                padding-top: 20px;
+                font-weight: $normalFontWeight;
+                font-size: 20px;
+            }
+
+            @include e(form){
+                @include e(input){
+                    width: 366px;
+                    display: block;
+                    margin-top: 25px;
+                    margin-bottom: 20px;
+                    padding: 6px 12px;
+                    
+                    height: 55px;
+                    border: 1px solid $colorForgotPass;
+                }
+
+                @include e(forgot){
+                    text-decoration: none;
+                    color: $colorForgotPass;
+                    font-size: 14px;
+                    padding: 20px 0;
+                    &:hover {
+                        color: $red;
+                    }
+                }
+
+                @include e(btn){
+                    display: block;
+                    background: $black;
+                    margin-top: 20px;
+                    padding: 20px 161px;
+                    @include m(a){
+                        display: block;
+                        color: $white;
+                        font-size: 14px;
+                        font-weight: $semiBoldFontWeight;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                    }
+
+                    &:hover {
+                        background: $red;
+                    }
+                }
+            }
+
+            @include e(register){
+                width: 366px;
+                background: $colorRegisterBlock;
+                border: 1px solid $colorBorderRegisterBlock;
+                margin-top: 30px;
+                padding: 10px;
+                font-size: 14px;
+                text-align: center;
+                @include e(dont){
+                    margin-right: 5px;
+                }
+                @include e(now){
+                    text-decoration: none;
+                    color: $colorForgotPass;
+                    &:hover{
+                        color: $red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.active{
+    display: block;
+}
