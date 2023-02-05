@@ -1,6 +1,8 @@
 .header-for-992px{
     display: block;
-    transition: .3s all ease;
+    left: 0;
+    top: -100px;
+    z-index: 10;
     
     @include e(container){
         padding: 15px 0;
@@ -116,3 +118,12 @@
 .header-none{
     display: none;
 }
+
+
+.activeh{
+    position: fixed;
+    transform: translateY(100px);
+    width: 100%;
+    background: $colorHeaderIsShow;
+    transition: all .3s linear;
+} 

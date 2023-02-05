@@ -1,19 +1,16 @@
 .pop-up-login {
     display: none;
-    width: 100%;
     height: 100%;
+    width: 100%;
     position: fixed;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
     top: 0;
     background: rgba(0,0,0,.6);
     z-index: 2;
 
     @include e(container){
-        margin: auto;
-        width: 100%;
         height: 100%;
-
+        width: 100%;
         @include e(main){
             height: 100%;
             display: flex;
