@@ -36,6 +36,7 @@ $colorHeaderIsShow: rgba(26, 26, 26, 0.9);
 $colorForgotPass: #c5c4c4;
 $colorBorderRegisterBlock: #e8eced;
 $colorRegisterBlock : #f2f2f2;
+$colorWordsNav: #7d7b7b;
 
 $colors: (
   "black": $black,
@@ -50,4 +51,5 @@ $colors: (
   "colorForgotPass": $colorForgotPass,
   "colorRegisterBlock": $colorRegisterBlock,
   "colorBorderRegisterBlock": $colorBorderRegisterBlock,
+  "colorWordsNav": $colorWordsNav,
 ) !default;
