@@ -1,11 +1,10 @@
 .header {
     display: block;
-    top: 0;
+    top: -65px;
     z-index: 10;
     width: 100%;
     padding: 15px;
     background-color: $white;
-    transition: all .3s ease;
     .top-menu {
         display: flex;
         justify-content: space-between;
@@ -196,8 +195,7 @@
 
 .active320px{
     position: fixed;
-    transform: translateY(100px);
+    top: 0;
     width: 100%;
-    background: $colorHeaderIsShow;
     transition: all .3s linear;
 }
