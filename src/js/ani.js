@@ -20,12 +20,9 @@ function handleMenu(e) {
 
 function closeMenu(e){
     e.preventDefault();
-  nav.toggleClass("block-none");
-  darkOverlay.toggleClass("none");
-  mobileMenu.toggleClass("none");
-
-
-
+  nav.removeClass("block");
+  darkOverlay.removeClass("visible");
+  mobileMenu.removeClass("visible");
 }
 
 function handleToggleMenu(e) {
@@ -44,9 +41,3 @@ function handleToggleMenu(e) {
     $(this).find(".has-submenu").removeClass("opened").children("ul").hide();
   });
 }
-
-
-
-
-
-
