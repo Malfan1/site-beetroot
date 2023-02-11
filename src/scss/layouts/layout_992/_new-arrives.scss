@@ -1,8 +1,9 @@
 .new-arrives{
-  grid-template-columns: repeat(4, minmax(130px, 1fr));// 5 after js
+  
   margin-top: 15px;
   margin-bottom: 70px;
   @include e(product){
+   
 
     @include scaleForNewArrives(first);
     @include scaleForNewArrives(second);
@@ -17,6 +18,38 @@
     @include fontSizeForPriceNewArrives(fourth);
     @include fontSizeForPriceNewArrives(fifth);
 
+    @include e(animation){
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+      position: absolute;
+      top: 15%;
+      right: 10px;
+      overflow: hidden;
+      
+
+      @include e(icon){
+        margin-right: 0;
+        background: $white;
+        border-radius: 50%;
+        width: 46px;
+        height: 46px;
+        &:hover {
+          background: $red;
+          cursor: pointer;
+        }
+
+        @include e(svg){
+          width: 20px;
+          height: 20px;
+          text-align: center;
+          transform: translate(60%, 60%);
+        }
+        
+      }
+    }
+    
+
   }
 
   @include e(h2){
@@ -28,3 +61,52 @@
 .close {
   display: block;
 }
+
+.svg1 {
+  transform: translateX(100px);
+}
+
+.new-arrives__product__first__figure:hover .svg1{
+  transform: translateX(0);
+  transition: transform .4s linear;
+  animation: .8s opacity 1 linear;
+
+}
+
+.svg2 {
+  transform: translateX(100px);
+}
+
+.new-arrives__product__first__figure:hover .svg2{
+  transform: translateX(0);
+  transition: transform .5s linear;
+  animation: 1s opacity 1 linear;
+
+
+}
+
+.svg3 {
+  transform: translateX(100px);
+}
+
+.new-arrives__product__first__figure:hover .svg3{
+  transform: translateX(0);
+  transition: transform .6s linear;
+  animation: 1.2s opacity 1 linear;
+
+}
+
+@keyframes opacity{
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  75% {
+    opacity: 0.84;
+  }
+  100% {
+    opacity: 1;
+  }
+} 

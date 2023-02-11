@@ -20,6 +20,10 @@
 
       @include styleForNewArrives(fifth);
 
+      @include e(animation){
+        display: none;
+      }
+
     }
   }
 

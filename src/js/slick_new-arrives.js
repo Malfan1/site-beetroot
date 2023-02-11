@@ -4,7 +4,6 @@ $(document).ready(function(){
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 3000,
-        pauseOnHover: false,
         pauseOnFocus : false,
         responsive : [
             {
@@ -12,7 +11,6 @@ $(document).ready(function(){
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 1,
-                    pauseOnHover: false,
                     pauseOnFocus : false,
                     autoplay: true,
                     autoplaySpeed: 3000,
