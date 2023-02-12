@@ -517,36 +517,54 @@
                 <img class="header-for-992px__right_img" src="svg/search_white.svg" alt="">
                 <img class="header-for-992px__right_img pop-up-login_img" id="open-pop-up-login" src="svg/person.svg" alt="">
                 <img class="header-for-992px__right_img" src="svg/like.svg" alt="">
-                <img class="header-for-992px__right_img" src="svg/bag_white.svg" alt="">
+                <img class="header-for-992px__right_img" id="pop-up-bag" src="svg/bag_white.svg" alt="">
               </div>
-              
-              <div class="pop-up-login" id="pop-up-login-container">
-                <div class="pop-up-login__container">
-                  <div class="pop-up-login__container__main">
-                    <div class="pop-up-login__container__main__image">
-                      <img src="svg/fodry.svg" alt="">
-                      <div class="pop-up-login__container__main__image_line"></div>
-                    </div>
-                    <h2 class="pop-up-login__container__main__h2">Great to have you back!</h2>
-                    <form action="" class="pop-up-login__container__main__form">
-                      <input type="text" placeholder="Email" class="pop-up-login__container__main__form__input">
-                      <input type="password" placeholder="Password" class="pop-up-login__container__main__form__input">
-                      <a class="pop-up-login__container__main__form__forgot" href="#">Forgot your password?</a>
-                      <button class="pop-up-login__container__main__form__btn">
-                        <a href="#" class="pop-up-login__container__main__form__btn_a">Login</a>
-                      </button>
-                    </form>
-                    <div class="pop-up-login__container__main__register">
-                      <span class="pop-up-login__container__main__register__dont">Don't have an account?</span>
-                      <a class="pop-up-login__container__main__register__now" href="#">Register Now</a>
-                    </div>
-                    
-                  </div>
+            </div>
+          </header>
+          
+          <div class="pop-up-login" id="pop-up-login-container">
+            <div class="pop-up-login__container">
+              <div class="pop-up-login__container__main">
+                <div class="pop-up-login__container__main__image">
+                  <img src="svg/fodry.svg" alt="">
+                  <div class="pop-up-login__container__main__image_line"></div>
+                </div>
+                <h2 class="pop-up-login__container__main__h2">Great to have you back!</h2>
+                <form action="" class="pop-up-login__container__main__form">
+                  <input type="text" placeholder="Email" class="pop-up-login__container__main__form__input">
+                  <input type="password" placeholder="Password" class="pop-up-login__container__main__form__input">
+                  <a class="pop-up-login__container__main__form__forgot" href="#">Forgot your password?</a>
+                  <button class="pop-up-login__container__main__form__btn">
+                    <a href="#" class="pop-up-login__container__main__form__btn_a">Login</a>
+                  </button>
+                </form>
+                <div class="pop-up-login__container__main__register">
+                  <span class="pop-up-login__container__main__register__dont">Don't have an account?</span>
+                  <a class="pop-up-login__container__main__register__now" href="#">Register Now</a>
                 </div>
               </div>
-              
             </div>
-          </header>          
+          </div>
+
+          
+          <div class="pop-up-bag" id="pop-up-bag-container">
+            <div class="pop-up-bag__container">
+              <div class="pop-up-bag__header">
+                <div class="pop-up-bag__close">
+                  <span class="pop-up-bag__icon" id="pop-up-bag-close"><i class="fa-solid fa-xmark pop-up-bag__i"></i></span>
+                </div>
+                <div class="pop-up-bag__title">
+                  <h2 class="pop-up-bag__h2">Shopping Cart</h2>
+                </div>
+                <div class="pop-up-bag__count">
+                  <span class="pop-up-bag__num">0</span>
+                </div>
+              </div>
+              <div class="pop-up-bag__main">
+                <p class="pop-up-bag__massage">Your cart is currently empty.</p>
+              </div>
+            </div>
+          </div>
 
           <div class="deals">
             <div class="deals__first-p">
@@ -646,7 +664,7 @@
                   <span>Sale</span>
                   
                 </div>
-                <div class="new-arrives__product__animation">
+                <div class="new-arrives__product__animation new-arrives__product__animation_fix">
                   <div class="new-arrives__product__animation__icon svg1">
                     <img class="new-arrives__product__animation__icon__svg" src="svg/like_black.svg" alt="">
                   </div>
@@ -1364,6 +1382,7 @@
     <script src="js/slider_advantages.js"></script>
     <script src="js/slick_new-arrives.js"></script>
     <script src="js/popup_login.js"></script>
+    <script src="js/pop-up_bag.js"></script>
     <script src="js/timer.js"></script>
     <script src="js/ani.js"></script>
     <script src="js/wow.min.js"></script>

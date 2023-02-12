@@ -1,5 +1,3 @@
-
-
 document.addEventListener('DOMContentLoaded', () => {
     const menuBtns = document.querySelectorAll('.header-for-992px__nav__ul__li_span');
     const drops = document.querySelectorAll('.header-for-992px__nav__ul-menu');

@@ -1,10 +1,8 @@
 .new-arrives{
-  
   margin-top: 15px;
   margin-bottom: 70px;
   @include e(product){
    
-
     @include scaleForNewArrives(first);
     @include scaleForNewArrives(second);
     @include scaleForNewArrives(third);
@@ -23,7 +21,7 @@
      flex-direction: column;
      gap: 10px;
       position: absolute;
-      top: 15%;
+      top: 50px;
       right: 10px;
       overflow: hidden;
       
@@ -73,6 +71,34 @@
 
 }
 
+.new-arrives__product__second__figure:hover .svg1{
+  transform: translateX(0);
+  transition: transform .4s linear;
+  animation: .8s opacity 1 linear;
+
+}
+
+.new-arrives__product__third__figure:hover .svg1{
+  transform: translateX(0);
+  transition: transform .4s linear;
+  animation: .8s opacity 1 linear;
+
+}
+
+.new-arrives__product__fourth__figure:hover .svg1{
+  transform: translateX(0);
+  transition: transform .4s linear;
+  animation: .8s opacity 1 linear;
+
+}
+
+.new-arrives__product__fifth__figure:hover .svg1{
+  transform: translateX(0);
+  transition: transform .4s linear;
+  animation: .8s opacity 1 linear;
+
+}
+
 .svg2 {
   transform: translateX(100px);
 }
@@ -81,8 +107,30 @@
   transform: translateX(0);
   transition: transform .5s linear;
   animation: 1s opacity 1 linear;
+}
 
+.new-arrives__product__second__figure:hover .svg2{
+  transform: translateX(0);
+  transition: transform .5s linear;
+  animation: 1s opacity 1 linear;
+}
 
+.new-arrives__product__third__figure:hover .svg2{
+  transform: translateX(0);
+  transition: transform .5s linear;
+  animation: 1s opacity 1 linear;
+}
+
+.new-arrives__product__fourth__figure:hover .svg2{
+  transform: translateX(0);
+  transition: transform .5s linear;
+  animation: 1s opacity 1 linear;
+}
+
+.new-arrives__product__fifth__figure:hover .svg2{
+  transform: translateX(0);
+  transition: transform .5s linear;
+  animation: 1s opacity 1 linear;
 }
 
 .svg3 {
@@ -93,9 +141,31 @@
   transform: translateX(0);
   transition: transform .6s linear;
   animation: 1.2s opacity 1 linear;
-
 }
 
+.new-arrives__product__second__figure:hover .svg3{
+  transform: translateX(0);
+  transition: transform .6s linear;
+  animation: 1.2s opacity 1 linear;
+}
+
+.new-arrives__product__third__figure:hover .svg3{
+  transform: translateX(0);
+  transition: transform .6s linear;
+  animation: 1.2s opacity 1 linear;
+}
+
+.new-arrives__product__fourth__figure:hover .svg3{
+  transform: translateX(0);
+  transition: transform .6s linear;
+  animation: 1.2s opacity 1 linear;
+}
+
+.new-arrives__product__fifth__figure:hover .svg3{
+  transform: translateX(0);
+  transition: transform .6s linear;
+  animation: 1.2s opacity 1 linear;
+}
 @keyframes opacity{
   0% {
     opacity: 0;
@@ -110,3 +180,7 @@
     opacity: 1;
   }
 } 
+
+.new-arrives__product__animation_fix{
+  top: 60px;
+}
