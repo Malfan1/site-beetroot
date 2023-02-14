@@ -13,8 +13,8 @@
     <div class="container">
       <header id="header-s" class="header">
         <!-- menu  -->
-        <div class="top-menu menu-button in-mobile active">
-          <div class="top-menu__left">
+        <div class="top-menu">
+          <div class="top-menu__left menu-button in-mobile active" id="menu320px">
             <p class="top-menu__left__large"></p>
             <p class="top-menu__left__small"></p>
             <p class="top-menu__left__medium"></p>
@@ -516,8 +516,8 @@
               <div class="header-for-992px__right">
                 <img class="header-for-992px__right_img" src="svg/search_white.svg" alt="">
                 <img class="header-for-992px__right_img pop-up-login_img" id="open-pop-up-login" src="svg/person.svg" alt="">
-                <img class="header-for-992px__right_img" src="svg/like.svg" alt="">
-                <img class="header-for-992px__right_img" id="pop-up-bag" src="svg/bag_white.svg" alt="">
+                <img class="header-for-992px__right_img" id="pop-up-like" src="svg/like.svg" alt="">
+                <img class="header-for-992px__right_img p" id="pop-up-bag" src="svg/bag_white.svg" alt="">
               </div>
             </div>
           </header>
@@ -525,6 +525,9 @@
           <div class="pop-up-login" id="pop-up-login-container">
             <div class="pop-up-login__container">
               <div class="pop-up-login__container__main">
+                <div class="pop-up-login__close">
+                  <span class="pop-up-login__icon" id="pop-up-login-close"><i class="fa-solid fa-xmark pop-up-login__i"></i></span>
+                </div>
                 <div class="pop-up-login__container__main__image">
                   <img src="svg/fodry.svg" alt="">
                   <div class="pop-up-login__container__main__image_line"></div>
@@ -561,6 +564,25 @@
               </div>
               <div class="pop-up-bag__main">
                 <p class="pop-up-bag__massage">Your cart is currently empty.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="pop-up-like" id="pop-up-like-container">
+            <div class="pop-up-like__container">
+              <div class="pop-up-like__header">
+                <div class="pop-up-like__close">
+                  <span class="pop-up-bag__icon" id="pop-up-like-close"><i class="fa-solid fa-xmark pop-up-bag__i pop-up-like__i"></i></span>
+                </div>
+                <div class="pop-up-like__title">
+                  <h2 class="pop-up-like__h2">LikeList</h2>
+                </div>
+                <div class="pop-up-like__count">
+                  <span class="pop-up-like__num">0</span>
+                </div>
+              </div>
+              <div class="pop-up-like__main">
+                <p class="pop-up-like__massage">Your list is currently empty.</p>
               </div>
             </div>
           </div>
@@ -1381,12 +1403,14 @@
     <script src="js/slider_advantages.js"></script>
     <script src="js/slick_new-arrives.js"></script>
     <script src="js/popup_login.js"></script>
+    <script src="js/pop-up_like.js"></script>
     <script src="js/pop-up_bag.js"></script>
     <script src="js/timer.js"></script>
     <script src="js/ani.js"></script>
     <script src="js/wow.min.js"></script>
     <script>
     new WOW().init();
+    
     </script>
   </body>
 </html>

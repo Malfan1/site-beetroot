@@ -1,4 +1,4 @@
-const menuButton = $(".menu-button");
+const menuButton = $("#menu320px");
 const darkOverlay = $(".dark-overlay");
 const mobileMenu = $(".mobile-menu");
 const nav = $('.mobile-navigation')
@@ -6,10 +6,6 @@ const nav = $('.mobile-navigation')
 $(document).on("click", ".menu-button", handleMenu);
 $(document).on("click", ".is-submenu", handleToggleMenu);
 $(document).on("click", ".dark-overlay", closeMenu);
-
-
-
-
 
 function handleMenu(e) {
   e.preventDefault();
