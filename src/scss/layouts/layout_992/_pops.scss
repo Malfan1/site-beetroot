@@ -138,6 +138,7 @@
 
     @include e(h2){
       font-size: 22px;
+      font-weight: $boldFontWeight;
     }
 
     @include e(count){
@@ -240,4 +241,9 @@
 
 .pop-up-search{
     display: none;
+}
+
+.open-pop1{
+    transform: translateX(0);
+    transition: transform .3s linear;
 }
