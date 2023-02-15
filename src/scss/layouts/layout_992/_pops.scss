@@ -122,85 +122,37 @@
 }
 
 .pop-up-bag{
-    display: block;
-    min-height: 100%;
     width: 30%;
-    background: $white;
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 20;
-    transform: translateX(1000px);
-    transition: transform .3s linear;
-
-    @include e(header){
-        display: flex;
-        justify-content: space-between;
-        position: relative;
-        width: 100%;
-        &:after{
-            content: '';
-            width: 100%;
-            height: 1px;
-            background: $colorBorderShoppingCart;
-            position: absolute;
-            bottom: 0;
-           }
-    }
+    z-index: 100;
 
     @include e(close){
-        position: relative;
-        padding: 15px;
-
         &::after{
             content: '';
-            width: 1px;
             height: 54px;
-            background: $colorBorderShoppingCart;
-            position: absolute;
-            right: 0px;
-            top: 0;
            }
     }
 
     @include e(i){
         font-size: 25px;
-        &:hover {
-            color: $red;
-            cursor: pointer;
-        }
     }
 
     @include e(h2){
-      margin: 0;
-      margin-top: 11px;
+      font-size: 22px;
     }
 
     @include e(count){
-        padding: 15px;
-        display: flex;
-        align-items: center;
-        position: relative;
         &::after{
             content: '';
-            width: 1px;
             height: 54px;
-            background: $colorBorderShoppingCart;
-            position: absolute;
-            left: 0;
-            top: 0;
            }
     }
 
-    @include e(num){
-    }
-
-    @include e(main){
-        font-size: 18px;
-        display: flex;
-        justify-content: center;
+    @include e(massage){
+        font-size: 20px;
     }
 }
+
+
 
 .open-pop{
     transform: translateX(0);
@@ -284,4 +236,8 @@
         display: flex;
         justify-content: center;
     }
+}
+
+.pop-up-search{
+    display: none;
 }

@@ -23,12 +23,18 @@
             <img src="svg/fodry.svg" class="top-menu__logo__img">
           </div>
           <div class="top-menu__right">
-            <img src="svg/search.svg" class="top-menu__right__img top-menu__right__img_padding">
-            <img src="svg/bag.svg" class="top-menu__right__img top-menu__right__img_position">
+            <img src="svg/search.svg" id="pop-up-search" class="top-menu__right__img top-menu__right__img_padding">
+            <img src="svg/bag.svg" id="pop-up-bag-320px" class="top-menu__right__img top-menu__right__img_position">
             <span class="top-menu__right_zero">0</span>
           </div>
         </div>
       </header>
+      <div class="pop-up-search">
+        <form id="pop-up-search-container" class="pop-up-search__form">
+          <input class="pop-up-search__input" type="text" name="search" placeholder="Search...">
+          <button class="pop-up-search__btn" type="submit">Search</button>
+        </form>
+      </div>
 
       <div class="dark-overlay"></div>
         <nav class="mobile-navigation">
@@ -1403,6 +1409,7 @@
     <script src="js/slider_advantages.js"></script>
     <script src="js/slick_new-arrives.js"></script>
     <script src="js/popup_login.js"></script>
+    <script src="js/pop-up_search.js"></script>
     <script src="js/pop-up_like.js"></script>
     <script src="js/pop-up_bag.js"></script>
     <script src="js/timer.js"></script>

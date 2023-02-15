@@ -1,10 +1,11 @@
-const button = document.querySelector('#pop-up-bag') 
-const bag = document.querySelector('#pop-up-bag-container') 
+const button = document.querySelector('#pop-up-bag');
+const bag = document.querySelector('#pop-up-bag-container');
 const closePop = document.querySelector("#pop-up-bag-close");
+const buttonMob = document.querySelector('#pop-up-bag-320px'); 
 
 
 document.addEventListener('DOMContentLoaded', () => { 
-
+  
     button.addEventListener('click', () => { 
       bag.classList.toggle('open-pop') 
     })
