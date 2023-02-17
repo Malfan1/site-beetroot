@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const drops = document.querySelectorAll('.header-for-992px__nav__ul-menu');
 
     menuBtns.forEach(el => {
-        el.addEventListener('click', (e) => {
+        el.addEventListener('mouseover', (e) => {
             let currentBtn = e.currentTarget;
             let drop = currentBtn.closest('.header-for-992px__nav__ul__li').querySelector('.header-for-992px__nav__ul-menu');
 
@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     })
 
-    document.addEventListener('click', (e) => {
+    document.addEventListener('mouseout', (e) => {
         if(!e.target.closest('.header-for-992px__nav')){
             menuBtns.forEach(el => {
                 el.classList.remove('activee');

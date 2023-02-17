@@ -22,6 +22,8 @@
             top: 92%;
 
             &:hover {
+                cursor: pointer;
+                transition: all .2s linear;
                 background: $red;
             }
         }

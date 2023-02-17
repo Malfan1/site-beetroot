@@ -45,10 +45,6 @@
 
     @include e(i){
         font-size: 20px;
-        &:hover {
-            color: $red;
-            cursor: pointer;
-        }
     }
 
     @include e(h2){
@@ -88,13 +84,13 @@
     }
 }
 .pop-up-like{
-    // display: none;
+    display: none;
 }
 .pop-up-search { 
     @include e(form) {
         position: fixed;
         display: flex;
-        top: 0;
+        top: -100px;
         left: 50%;
         transform: translateX(-50%);
         z-index: 1000;
@@ -103,7 +99,6 @@
         border-radius: 4px;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         transition: all .3s linear;
-        opacity: 0;
       }
 
       @include e(input){
@@ -118,7 +113,10 @@
   
   .pop-up-search__form.active {
     top: 80px;
-    opacity: 1;
   }
   
   
+.open-pop-mob{
+    transform: translateX(0);
+    transition: transform .3s linear;
+}

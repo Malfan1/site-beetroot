@@ -19,10 +19,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-/* $('#pop-up-like').click(function() {
-  $('#pop-up-like-container').toggle('open-pop');
-});
-
-$('#pop-up-like-close').click(function(){
-  $('#pop-up-like-container').removeClass('open-pop');
-}); */
